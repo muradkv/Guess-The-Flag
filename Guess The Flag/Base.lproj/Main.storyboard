@@ -18,21 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vc9-iE-oiC">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vc9-iE-oiC">
                                 <rect key="frame" x="87.5" y="274" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4G0-E6-bf0"/>
                                     <constraint firstAttribute="height" constant="100" id="50r-27-vmy"/>
                                 </constraints>
                                 <state key="normal" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjT-z3-DHa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f95-4M-adD">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f95-4M-adD">
                                 <rect key="frame" x="87.5" y="404" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="EDx-J1-Gic"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="GBS-gN-3Hm"/>
                                 </constraints>
                                 <state key="normal" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iHg-e6-gfn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vh9-Oh-92N">
                                 <rect key="frame" x="87.5" y="140" width="200" height="100"/>
@@ -41,6 +47,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="b4V-a2-05M"/>
                                 </constraints>
                                 <state key="normal" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46W-W4-N5j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
