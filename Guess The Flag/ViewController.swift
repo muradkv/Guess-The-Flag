@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        var title: String
+        var title: String 
         
         if sender.tag == correctAnswer {
             title = "Correct"
@@ -60,16 +60,18 @@ class ViewController: UIViewController {
         }
         
         if tapped == 10 {
-            let ac = UIAlertController(title: "And last one was \(title)", message: "Game Over. Your final score is \(score).", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "New game", style: .cancel, handler: askQuestion))
-            present(ac, animated: true)
+            showAlert(title: "And last one was \(title)", buttonTitle: "New game", message: "Game Over. Your final score is \(score).")
             tapped = 0
             score = 0
         } else {
-            let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "Continue", style: .cancel, handler: askQuestion))
-            present(ac, animated: true)
+            showAlert(title: title, buttonTitle: "Continue", message: "Your score is \(score).")
         }
+    }
+    
+    func showAlert(title: String, buttonTitle: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: buttonTitle, style: .cancel, handler: askQuestion))
+        present(ac, animated: true)
     }
 }
 
