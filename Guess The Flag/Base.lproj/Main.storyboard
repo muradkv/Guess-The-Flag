@@ -19,10 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vc9-iE-oiC">
-                                <rect key="frame" x="87.5" y="274" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="204" width="200" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4G0-E6-bf0"/>
-                                    <constraint firstAttribute="height" constant="100" id="50r-27-vmy"/>
+                                    <constraint firstAttribute="width" secondItem="vc9-iE-oiC" secondAttribute="height" multiplier="2:1" id="mTz-PN-Qua"/>
                                 </constraints>
                                 <state key="normal" image="germany"/>
                                 <connections>
@@ -30,10 +29,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f95-4M-adD">
-                                <rect key="frame" x="87.5" y="404" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="334" width="200" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="EDx-J1-Gic"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="GBS-gN-3Hm"/>
+                                    <constraint firstAttribute="width" secondItem="f95-4M-adD" secondAttribute="height" multiplier="2:1" id="gJ3-dn-q1t"/>
                                 </constraints>
                                 <state key="normal" image="germany"/>
                                 <connections>
@@ -41,10 +39,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vh9-Oh-92N">
-                                <rect key="frame" x="87.5" y="140" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="74" width="200" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="HTb-vS-yAO"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="b4V-a2-05M"/>
+                                    <constraint firstAttribute="width" secondItem="vh9-Oh-92N" secondAttribute="height" multiplier="2:1" id="TK5-Yb-Udc"/>
                                 </constraints>
                                 <state key="normal" image="germany"/>
                                 <connections>
@@ -54,12 +51,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="f95-4M-adD" secondAttribute="bottom" constant="20" id="5MI-Xj-ySR"/>
                             <constraint firstItem="f95-4M-adD" firstAttribute="top" secondItem="vc9-iE-oiC" secondAttribute="bottom" constant="30" id="Aot-2G-Ebo"/>
                             <constraint firstItem="vh9-Oh-92N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BaJ-Dp-pBF"/>
-                            <constraint firstItem="vc9-iE-oiC" firstAttribute="top" secondItem="vh9-Oh-92N" secondAttribute="bottom" constant="34" id="Sr6-8y-FqT"/>
-                            <constraint firstItem="vc9-iE-oiC" firstAttribute="centerX" secondItem="vh9-Oh-92N" secondAttribute="centerX" id="VwH-yY-pJm"/>
-                            <constraint firstItem="vh9-Oh-92N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="WAR-Zk-drl"/>
-                            <constraint firstItem="f95-4M-adD" firstAttribute="centerX" secondItem="vc9-iE-oiC" secondAttribute="centerX" id="c6d-cg-9hz"/>
+                            <constraint firstItem="f95-4M-adD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jx3-zJ-IvA"/>
+                            <constraint firstItem="vc9-iE-oiC" firstAttribute="top" secondItem="vh9-Oh-92N" secondAttribute="bottom" constant="30" id="Sr6-8y-FqT"/>
+                            <constraint firstItem="vc9-iE-oiC" firstAttribute="height" secondItem="f95-4M-adD" secondAttribute="height" id="Tby-J9-Ven"/>
+                            <constraint firstItem="vh9-Oh-92N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="WAR-Zk-drl"/>
+                            <constraint firstItem="vc9-iE-oiC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="axc-eW-obi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
